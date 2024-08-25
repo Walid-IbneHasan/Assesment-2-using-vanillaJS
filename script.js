@@ -111,3 +111,24 @@ function togglePlayPause(widget, isPlaying) {
     ? "inline-block"
     : "none";
 }
+
+//Getting the timer widget value and showing it in the above text
+document.addEventListener("DOMContentLoaded", function () {
+  const targetTimeInput = document.getElementById("target-time-input");
+  const controlsTimerClass = document.getElementById("controls-timer-class");
+
+  function updateTargetTime() {
+    const textTimerWidget = parseInt(targetTimeInput.value);
+
+    // Check if the value is a valid number
+    if (!isNaN(textTimerWidget)) {
+      controlsTimerClass.textContent = textTimerWidget + " min";
+    } else {
+      controlsTimerClass.textContent = "";
+    }
+  }
+
+  // Listen for input and change events on the target-time-input element
+  targetTimeInput.addEventListener("input", updateTargetTime);
+  targetTimeInput.addEventListener("change", updateTargetTime);
+});

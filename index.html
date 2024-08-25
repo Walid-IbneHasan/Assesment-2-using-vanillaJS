@@ -19,59 +19,77 @@
       <div class="widget-timer">
         <div class="timer">
           <div class="display">
-            <span id="timer-display-minutes">00</span> min
-            <span id="timer-display-seconds">00</span> sec
+            <div class="flex">
+              <span id="timer-display-minutes">00</span>
+              <span class="flex-span">min</span>
+            </div>
+            <div class="flex">
+              <span id="timer-display-seconds">00</span>
+              <span class="flex-span">sec</span>
+            </div>
           </div>
-          <div class="controls">
-            <button id="minus-15sec-timer">
-              <i class="fa-solid fa-rotate-left"></i>
-            </button>
-            <button id="start-timer">
-              <i class="fas fa-play"></i>
-            </button>
-            <button id="pause-timer" style="display: none">
-              <i class="fas fa-pause"></i>
-            </button>
-            <button id="plus-15sec-timer">
-              <i class="fa-solid fa-rotate-right"></i>
-            </button>
+          <div class="controls-timer">
+            <p>Target Time: <span id="controls-timer-class"></span></p>
+            <div class="controls">
+              <input
+                type="number"
+                id="target-time-input"
+                placeholder="Set Time (min)"
+                min="1"
+              />
+            </div>
+            <div class="controls">
+              <button id="minus-15sec-timer">
+                <i class="fa-solid fa-rotate-left"></i>
+              </button>
+              <button id="start-timer">
+                <i class="fas fa-play"></i>
+              </button>
+              <button id="pause-timer" style="display: none">
+                <i class="fas fa-pause"></i>
+              </button>
+              <button id="plus-15sec-timer">
+                <i class="fa-solid fa-rotate-right"></i>
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="controls">
-          <input
-            type="number"
-            id="target-time-input"
-            placeholder="Set Time (min)"
-          />
         </div>
       </div>
 
       <!-- Stopwatch Widget -->
-      <div class="widget-timestamp">
+      <div class="widget-stopwatch">
         <div class="stopwatch">
           <div class="display">
-            <span id="stopwatch-display-minutes">00</span> min
-            <span id="stopwatch-display-seconds">00</span> sec
+            <div class="flex">
+              <span id="stopwatch-display-minutes">00</span>
+              <span class="flex-span">min</span>
+            </div>
+            <div class="flex">
+              <span id="stopwatch-display-seconds">00</span>
+              <span class="flex-span">sec</span>
+            </div>
           </div>
-          <div class="controls">
-            <button id="minus-15sec-stopwatch">
-              <i class="fa-solid fa-rotate-left"></i>
-            </button>
-            <button id="start-stopwatch">
-              <i class="fas fa-play"></i>
-            </button>
-            <button id="pause-stopwatch" style="display: none">
-              <i class="fas fa-pause"></i>
-            </button>
-            <button id="plus-15sec-stopwatch">
-              <i class="fa-solid fa-rotate-right"></i>
-            </button>
-          </div>
-        </div>
-        <div class="controls-timestamp">
-          <p>Timestamp</p>
+          <div class="controls-stopwatch">
+            <div class="controls-timestamp">
+              <p>Timestamp</p>
 
-          <input type="time" id="timestamp-input" />
+              <input type="time" id="timestamp-input" />
+            </div>
+            <div class="controls">
+              <button id="minus-15sec-stopwatch">
+                <i class="fa-solid fa-rotate-left"></i>
+              </button>
+              <button id="start-stopwatch">
+                <i class="fas fa-play"></i>
+              </button>
+              <button id="pause-stopwatch" style="display: none">
+                <i class="fas fa-pause"></i>
+              </button>
+              <button id="plus-15sec-stopwatch">
+                <i class="fa-solid fa-rotate-right"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
