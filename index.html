@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer & Stopwatch Widget</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Timer Widget -->
+      <div class="widget-timer">
+        <div class="timer">
+          <div class="display">
+            <span id="timer-display-minutes">00</span> min
+            <span id="timer-display-seconds">00</span> sec
+          </div>
+          <div class="controls">
+            <button id="minus-15sec-timer">
+              <i class="fa-solid fa-rotate-left"></i>
+            </button>
+            <button id="start-timer">
+              <i class="fas fa-play"></i>
+            </button>
+            <button id="pause-timer" style="display: none">
+              <i class="fas fa-pause"></i>
+            </button>
+            <button id="plus-15sec-timer">
+              <i class="fa-solid fa-rotate-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="controls">
+          <input
+            type="number"
+            id="target-time-input"
+            placeholder="Set Time (min)"
+          />
+        </div>
+      </div>
+
+      <!-- Stopwatch Widget -->
+      <div class="widget-timestamp">
+        <div class="stopwatch">
+          <div class="display">
+            <span id="stopwatch-display-minutes">00</span> min
+            <span id="stopwatch-display-seconds">00</span> sec
+          </div>
+          <div class="controls">
+            <button id="minus-15sec-stopwatch">
+              <i class="fa-solid fa-rotate-left"></i>
+            </button>
+            <button id="start-stopwatch">
+              <i class="fas fa-play"></i>
+            </button>
+            <button id="pause-stopwatch" style="display: none">
+              <i class="fas fa-pause"></i>
+            </button>
+            <button id="plus-15sec-stopwatch">
+              <i class="fa-solid fa-rotate-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="controls-timestamp">
+          <p>Timestamp</p>
+
+          <input type="time" id="timestamp-input" />
+        </div>
+      </div>
+    </div>
+    <div class="text">
+      <h1>
+        Timer <span>&</span> <br />
+        Stopwatch <br />
+        Widget <br />
+        <span>With Variables</span>
+      </h1>
+      <p>For iOS in Figma+Tutorials</p>
+      <div class="text-below">
+        <img src="/parachutePic.jpg" alt="ParachutePic" />
+        <p>Way of Mani</p>
+      </div>
+    </div>
+    <div class="semi-circle-one"></div>
+    <div class="semi-circle-two"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
